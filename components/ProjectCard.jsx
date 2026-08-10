@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ProjectCard({ project }) {
   const temSite = project.site !== null;
   
@@ -11,11 +13,6 @@ export default function ProjectCard({ project }) {
         <h4>{project.title}</h4>
         <p className="project-description">{project.description}</p>
         
-        <div className="project-tech">
-          {project.tech.map((tech) => (
-            <span key={tech}>{tech}</span>
-          ))}
-        </div>
         
         <div className="project-actions">
           {temSite && (
@@ -33,6 +30,10 @@ export default function ProjectCard({ project }) {
               Ver Site
             </a>
           )}
+
+          <Link href={`/projetos/${project.id}`} className="btn btn-secondary">
+            Saiba Mais
+          </Link>
           
           <a 
             href={project.repo} 

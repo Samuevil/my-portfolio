@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
 import Skills from '../components/Skills';
 import { projects } from '../data/projects';
+import { basePath } from '../lib/paths';
 import { useState } from 'react';
 
 export default function Home() {
@@ -91,7 +92,7 @@ export default function Home() {
         <link rel="canonical" href="https://seusite.com/" />
         <meta property="og:title" content="Lucas Cardoso | Engenheiro de Software" />
         <meta property="og:description" content="Portfólio de Lucas Cardoso - Engenheiro de Software. Veja meus projetos." />
-        <meta property="og:image" content="/img/profile-samuevil.jpg" />
+        <meta property="og:image" content={`${basePath}/img/profile-samuevil.jpg`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lucas Cardoso | Engenheiro de Software" />
@@ -106,9 +107,9 @@ export default function Home() {
             <p className="hero-greeting">Olá, meu nome é</p>
             <h1 className="hero-title">Lucas Cardoso</h1>
             <p className="hero-subtitle">Sou engenheiro de software em Montes Claros, Brasil.</p>
-            <p className="hero-description">Construo aplicações web com React, Next.js e Node.js.</p>
+            <p className="hero-description">Soluções que começam com uma ideia.</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="/curriculo/Lucas_Samuel_Desenvolvedor.pdf" download>
+              <a className="button button-primary" href={`${basePath}/curriculo/Lucas_Samuel_Desenvolvedor.pdf`} download>
                 Download CV
               </a>
               <a className="button button-secondary" href="#contato">Entrar em contato</a>
@@ -118,28 +119,32 @@ export default function Home() {
           <aside className="profile-card">
             <img
               className="avatar-image"
-              src="/img/profile-samuevil.jpg"
+              src={`${basePath}/img/profile-samuevil.jpg`}
               alt="Lucas Cardoso - Engenheiro de Software"
             />
           </aside>
         </section>
 
-        <section className="section about-section">
-          <div className="about-text">
-            <p>
-              Desenvolvo aplicações web completas — frontend, backend e banco de dados.
-              Trabalho com React, Next.js, Node.js, APIs REST, autenticação e Git.
-            </p>
-            <p>
-              Meus projetos são construídos do zero, com foco em código limpo, 
-              arquitetura bem definida e boas práticas de desenvolvimento.
-            </p>
-            <p>
-              Estou sempre em busca de novos desafios e oportunidades para aplicar 
-              minhas habilidades na construção de soluções que realmente funcionam.
-            </p>
-          </div>
-        </section>
+      <section className="section about-section">
+        <div className="about-text">
+          <p>
+            Desenvolvedor Full Stack formado em Engenharia de Software, com foco na
+            criação de aplicações web modernas e funcionais.
+          </p>
+
+          <p>
+            Desenvolvo projetos completos utilizando React, Next.js, Node.js e
+            MongoDB, criando interfaces intuitivas, APIs REST, autenticação de
+            usuários e integrações com serviços externos.
+          </p>
+
+          <p>
+            Valorizo código limpo, arquitetura bem estruturada e boas práticas de
+            desenvolvimento, sempre buscando entregar soluções que proporcionem uma
+            excelente experiência ao usuário.
+          </p>
+        </div>
+      </section>
 
         <section id="competencias" className="section competencias">
           <h3>Habilidades</h3>
