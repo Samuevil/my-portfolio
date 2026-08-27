@@ -8,7 +8,7 @@ export const projects = [
       "Plataforma web desenvolvida para auxiliar no gerenciamento de treinos, permitindo organizar exercícios, acompanhar a evolução e facilitar o planejamento de rotinas de atividade física por meio de uma interface intuitiva e responsiva.",
     details:
       "Fitness Web Platform oferece módulos de treino, histórico de desempenho e personalização de planos de atividade física. O projeto foi construído para tornar a jornada do usuário mais motivadora, com foco em usabilidade e clareza nas informações. A arquitetura possibilita expansão para integração com APIs de saúde e monitoramento.",
-    image: `${basePath}/img/shape-thumbnail.png`,
+    image: `${basePath}/img/gym-thumbnail.png`,
     site: "https://samuevil.github.io/fitness-web-platform/",
     repo: "https://github.com/samuevil/fitness-web-platform"
   },
@@ -20,8 +20,8 @@ export const projects = [
     details:
       "Convert PDF é uma ferramenta prática para transformar PDFs em DOCX sem perda de estrutura. O sistema processa documentos diretamente no navegador, mantendo parágrafos, listas e tabelas intactos. A solução é ideal para quem precisa editar conteúdos já existentes de forma ágil.",
     image: `${basePath}/img/convertpdf-thumbnail.png`,
-    site: "https://samuevil.github.io/PDFtoDOCX/",
-    repo: "https://github.com/samuevil/PDFtoDOCX"
+    site: "https://samuevil.github.io/ConvertPDF/",
+    repo: "https://samuevil.github.io/ConvertPDF/"
   },
   {
     id: 3,
