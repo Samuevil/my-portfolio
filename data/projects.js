@@ -21,7 +21,7 @@ export const projects = [
       "Convert PDF é uma ferramenta prática para transformar PDFs em DOCX sem perda de estrutura. O sistema processa documentos diretamente no navegador, mantendo parágrafos, listas e tabelas intactos. A solução é ideal para quem precisa editar conteúdos já existentes de forma ágil.",
     image: `${basePath}/img/convertpdf-thumbnail.png`,
     site: "https://samuevil.github.io/ConvertPDF/",
-    repo: "https://samuevil.github.io/ConvertPDF/"
+    repo: "https://github.com/Samuevil/ConvertPDF"
   },
   {
     id: 3,
